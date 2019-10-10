@@ -1,3 +1,5 @@
+@font-face { font-family: calibril; src: url('calibril.woff'); }
+
 * {
   margin: 0;
 }
@@ -9,10 +11,10 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: sans-serif;
+  font-family: "calibril", sans-serif;
   background-color: #ed473f;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   min-height: 100vh;
   line-height: 1.4;
   text-align: center;
@@ -31,6 +33,7 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  margin-bottom: 6rem; 
 }
 
 .site-content p + p {
@@ -39,6 +42,13 @@ body {
 
 .site-title {
   font-size: 1.5rem;
+  font-weight: normal;
+}
+
+@media(max-width: 767px) {
+  .site-title {
+    font-size: 1rem; 
+  }
 }
 
 .site-header {
@@ -73,5 +83,12 @@ body {
 
 .site-footer {
   padding-bottom: 1rem;
-  font-size: 0.7rem;
+  font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  .site-footer {
+    font-size: 0.8rem;
+  }
+}
+
